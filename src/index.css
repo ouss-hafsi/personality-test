@@ -29,6 +29,8 @@ code {
   display: flex;
   flex-direction: column;
   width: 700px;
+  margin-right: 20px;
+  margin-left: 20px;
 }
 
 .input-style {
@@ -72,6 +74,8 @@ input[type=radio] {
   height:100vh;
   flex-direction:column;
   gap:20px;
+  margin-right: 20px;
+  margin-left: 20px;
 }
 
 .user-name-label {
@@ -154,11 +158,12 @@ margin-bottom: 20px;
 }
 
 .login-form {
-   display: flex;
-   flex-direction: column;
-   width: 500px;
-   /* height: 50px; */
-   gap:20px;
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  gap:20px;
+  margin-right: 20px;
+  margin-left: 20px;
 }
 
 .login-form h1 {
@@ -311,4 +316,5 @@ table {
   align-items: center;
   font-family: 'Open sans';
   font-size: 30px;
+  margin-left: 70px;
 }
