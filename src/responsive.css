@@ -1,6 +1,6 @@
 @media  screen and (max-width:600px) {
 
-    .go-back-to-dashboard {
+    /* .go-back-to-dashboard {
         background-color: black;
         color: white;
         border: none;
@@ -22,7 +22,7 @@
         height: 50px;
         width: 230px;
         cursor: pointer;
-    }
+    } */
 
   }
 
@@ -46,7 +46,7 @@
 
   @media  screen and (max-width:470px) {
 
-    .go-back-to-dashboard {
+    /* .go-back-to-dashboard {
         background-color: black;
         color: white;
         border: none;
@@ -68,7 +68,7 @@
         height: 50px;
         width: 160px;
         cursor: pointer;
-    }
+    } */
 
   }
 

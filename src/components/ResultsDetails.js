@@ -39,10 +39,14 @@ const ResultsDetails = () => {
 
     return (
         <>
+        <div className="buttons-wrap">
+        <button onClick={deleteClient} className="delete-client-information">Delete client information</button>
+            <Link to='/admin'><button className="go-back-to-dashboard">Go back to dashboard</button></Link>
+        </div>
+
             <div className="result-details-wrap">
                 <div>
-                    <button onClick={deleteClient} className="delete-client-information">Delete client information</button>
-                    <Link to='/admin'><button className="go-back-to-dashboard">Go back to dashboard</button></Link>
+
                     <h1>{resultDetails.username}</h1>
                     <p>{resultDetails.answerQuestion0}</p>
                     <p>{resultDetails.answerQuestion1}</p>
