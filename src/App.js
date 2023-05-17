@@ -585,10 +585,6 @@ function App() {
 
   return (
     <>
-    {/* <Navigation /> */}
-
-
-   
       <Routes>
       <Route path='/' element={<Home valueOne={valueOne} valueTwo={valueTwo} valueThree={valueThree} valueFour={valueFour} question={question}  getAnswer={getAnswer} nextQuestion={nextQuestion} />}/>
       <Route path='/result' element={<Result experientialAvoidance={experientialAvoidance} rumination={rumination} emotionalMasking={emotionalMasking} shortTermFocus={shortTermFocus} responsePersistence={responsePersistence} hostility={hostility} negativeAppraisal={negativeAppraisal}
@@ -602,13 +598,6 @@ function App() {
       answerQuestion40={answerQuestion40} answerQuestion41={answerQuestion41} answerQuestion42={answerQuestion42} answerQuestion43={answerQuestion43} answerQuestion44={answerQuestion44} answerQuestion45={answerQuestion45}
       answerQuestion46={answerQuestion46} answerQuestion47={answerQuestion47} answerQuestion48={answerQuestion48} answerQuestion49={answerQuestion49} answerQuestion50={answerQuestion50} answerQuestion51={answerQuestion51}
       answerQuestion52={answerQuestion52} answerQuestion53={answerQuestion53} answerQuestion54={answerQuestion54} answerQuestion55={answerQuestion55}/>}/>
-
-
-
-
-
-
-
       <Route path='/results/:id' element={<ResultsDetails/>}/>
       <Route path='/resultsubmitted' element={<ResultSubmitted/>}/>
       <Route path='/admin' element={<Admin signIn={signIn}/>}/>
