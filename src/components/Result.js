@@ -84,7 +84,7 @@ const Result = ({ experientialAvoidance, rumination, emotionalMasking, shortTerm
 
     function handleSubmit(event) {
         event.preventDefault()
-        axios.post('https://personality-test-backend.herokuapp.com/results', sendResults)
+        axios.post('https://personality-test-backend.onrender.com/results', sendResults)
             .then(() => {
                 console.log(sendResults)
                 navigate('/resultsubmitted')

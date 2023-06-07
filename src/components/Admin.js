@@ -13,7 +13,7 @@ const Admin = () => {
     function getUsers() {
         const config = localStorage.getItem('Token');
         const config1 = { headers: { Authorization: `Bearer ${config}` } };
-        axios.get(`https://personality-test-backend.herokuapp.com/users`, config1)
+        axios.get(`https://personality-test-backend.onrender.com/users`, config1)
             .then((res) => {
                 const users = res.data;
                 const loggedInUser = users.find((user) => user.username === window.localStorage.getItem('Username'))
@@ -30,7 +30,7 @@ const Admin = () => {
     function getData() {
         const config = localStorage.getItem('Token');
         const config1 = { headers: { Authorization: `Bearer ${config}` } };
-        axios.get(`https://personality-test-backend.herokuapp.com/results`, config1)
+        axios.get(`https://personality-test-backend.onrender.com/results`, config1)
             .then((res) => {
                 console.log(res.data)
                 setClientResults(res.data)

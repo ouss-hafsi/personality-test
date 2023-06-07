@@ -11,7 +11,7 @@ const ResultsDetails = () => {
     function getResultDetails() {
         const config = localStorage.getItem('Token');
         const config1 = { headers: { Authorization: `Bearer ${config}` } }
-        axios.get(`https://personality-test-backend.herokuapp.com/results/${id}`, config1)
+        axios.get(`https://personality-test-backend.onrender.com/results/${id}`, config1)
             .then((res) => {
                 console.log(res.data)
                 setResultDetails(res.data)
@@ -21,7 +21,7 @@ const ResultsDetails = () => {
     function deleteClient() {
         const config = localStorage.getItem('Token');
         const config1 = { headers: { Authorization: `Bearer ${config}` } }
-        axios.delete(`https://personality-test-backend.herokuapp.com/results/${id}`, config1)
+        axios.delete(`https://personality-test-backend.onrender.com/results/${id}`, config1)
         .then((res) => {
             navigate('/admin')
         })

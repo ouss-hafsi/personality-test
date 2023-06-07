@@ -16,7 +16,7 @@ const Signup = () => {
     
     function handleSubmit(event) {
         event.preventDefault()
-        axios.post('https://personality-test-backend.herokuapp.com/users/signup', user)
+        axios.post('https://personality-test-backend.onrender.com/users/signup', user)
             .then(() => {
                 console.log(`the post is ${user}`)
                 navigate('/signin')
